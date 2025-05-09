@@ -1,8 +1,19 @@
 # 🖱️ BlenderCursor – Talk to Blender with Natural Language
 
-BlenderCursor is a desktop app that turns plain English into Blender scripts using AI. Just say or type commands like **"Create a mountain with trees and a sun"**, and the app translates it into Python code and executes it via Blender’s API.
+BlenderCursor is a desktop app that turns plain English into Blender scripts using AI. Just say or type commands like **"Create a mountain with trees and a sun"**, and the app translates it into Python code and executes it via Blender's API.
 
 > ⚠️ **Project Status**: Work in progress. Development has just started and it will take time to complete the core features. Stay tuned for updates as we build!
+
+## 🔄 How It Works
+
+![BlenderCursor Process Flow](https://github.com/ABISHAIKANHIRAM/BlenderCursor/blob/main/images/proposed%20work%20flow.png)
+
+1. **Voice Input**: Speak your command
+2. **Speech-to-Text**: Convert speech to text
+3. **Transcribed Text**: Process the text
+4. **Fine-Tuned LLM**: AI converts text to code
+5. **Python Code for API**: Generate Blender commands
+6. **Rendered 3D Object**: See your creation in Blender
 
 ---
 
@@ -60,7 +71,7 @@ Blender is powerful but has a steep learning curve. BlenderCursor lowers that ba
 ## 🧩 Example Prompt → Code
 
 Prompt:
-> “Add a mountain terrain”
+> "Add a mountain terrain"
 
 Generated Python:
 ```python
@@ -69,3 +80,4 @@ import bpy
 bpy.ops.mesh.primitive_plane_add(size=10)
 bpy.ops.object.modifier_add(type='DISPLACE')
 bpy.ops.texture.new()
+```
