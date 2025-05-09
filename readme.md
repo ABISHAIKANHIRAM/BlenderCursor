@@ -2,56 +2,57 @@
 
 BlenderCursor is a desktop app that turns plain English into Blender scripts using AI. Just say or type commands like **"Create a mountain with trees and a sun"**, and the app translates it into Python code and executes it via Blender’s API.
 
-Whether you're a beginner or a pro, BlenderCursor helps you build 3D scenes faster—with zero coding required.
+> ⚠️ **Project Status**: Work in progress. Development has just started and it will take time to complete the core features. Stay tuned for updates as we build!
 
 ---
 
-## 🚀 Features
+## 🚀 Features (Planned)
 
-- 🧠 **LLM-Powered Prompt Parser**  
-  Uses models like GPT-4, Mistral, or WizardCoder to interpret natural language.
+- 🧠 **Prompt-to-Script Engine**  
+  Interpret natural language and convert it into Blender Python code.
 
 - 🛠 **Script Generator**  
-  Converts prompts into valid `bpy` Python code (Blender’s scripting language).
+  Automatically generates `bpy` commands based on scene descriptions.
 
 - 🖥️ **Cross-Platform Desktop App**  
-  Built with Electron, Tauri, or PyQt.
+  Intuitive UI using Electron, Tauri, or PyQt.
 
-- 🔁 **Live Feedback**  
-  Shows Blender logs, preview renders, or exports `.blend` files directly.
+- 🔁 **Live Feedback (Planned)**  
+  Show Blender logs, rendered previews, or exported `.blend` files.
 
-- 🎙️ **Voice Input (Optional)**  
-  Hands-free scene creation using Whisper or Vosk.
+- 🎙️ **Voice Input (Optional, Planned)**  
+  Hands-free 3D scene creation through speech.
 
 ---
 
 ## 🧪 Variants & Future Plans
 
-- **MVP**: Text → Script, editable before execution  
+- **MVP**: Text → Script (editable before execution)  
 - **Prompt-to-Scene**: Auto-generate terrain, lighting, and objects  
-- **Image-to-3D (Advanced)**: Use depth estimation (MiDaS, DPT, Luma AI)  
-- **Voice-Driven Workflow**: Full hands-free 3D prototyping
+- **Image-to-3D (Advanced)**: Use depth estimation and mesh reconstruction  
+- **Voice Control**: Full hands-free 3D prototyping
 
 ---
 
 ## 💡 Why BlenderCursor?
 
-Blender is powerful but hard to learn. BlenderCursor makes 3D modeling more accessible, creative, and fun. Ideal for:
-- Artists
-- Educators
-- Hackers and tinkerers
-- Anyone scared of `bpy` 😄
+Blender is powerful but has a steep learning curve. BlenderCursor lowers that barrier, making it easier and more intuitive to create 3D content—perfect for:
+
+- Artists  
+- Educators  
+- Beginners  
+- Rapid prototyping
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Tech Stack (TBD)
 
-| Component      | Tech Used                          |
+| Component      | Tech Used (Subject to Change)      |
 |----------------|------------------------------------|
-| Frontend       | Electron / Tauri / PyQt            |
-| AI Model       | GPT-4, Mistral, Dolphin, Ollama     |
-| Backend        | Python, Blender `bpy` API          |
-| Voice Input    | Whisper / Vosk                     |
+| Frontend       | Cross-platform desktop frameworks  |
+| LLM Integration| To be announced                    |
+| Backend        | Blender `bpy` API                  |
+| Voice Input    | Optional                           |
 | Automation     | Blender subprocess / MCP server    |
 
 ---
